@@ -1,0 +1,60 @@
+.about {
+  display: flex;
+  justify-content: space-around;
+}
+
+.folderStructure {
+  margin-left: 10px;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
+  background-color: #f9f9f9;
+}
+
+.title {
+  text-decoration: underline;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.components,
+.pages,
+.root-files {
+  text-align: left;
+  font-weight: bold;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.folder {
+  color: #3498db;
+}
+
+.file {
+  color: #27ae60;
+}
+
+.highlightColor {
+  color: #ffd700;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 780px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .folderStructure {
+    width: 80% !important;
+  }
+}
